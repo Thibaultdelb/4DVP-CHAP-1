@@ -25,4 +25,4 @@ jobs:
     steps:
       - name: Afficher les informations du joueur
         run: |
-          echo "Le joueur ${ {inputs.username} } est de niveau ${ {inputs.level} } et joue un ${ {inputs.class} }."
+          echo "Le joueur ${ {inputs.username} } est de niveau ${ {inputs.level} } et joue un ${ {inputs.Class} }."
