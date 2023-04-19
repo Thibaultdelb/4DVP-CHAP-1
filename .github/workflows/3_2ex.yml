@@ -1,13 +1,13 @@
-# name: "hello-world"
+ name: "hello-world"
 
-# on:
-#   schedule:
-#     - cron: "*/10 * * * *"
-#     - cron: "0 0 1 * *"
+ on:
+   schedule:
+     - cron: "*/10 * * * *"
+     - cron: "0 0 1 * *"
 
-# jobs:
-#   say_hello:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - name: say_hello
-#       run: echo "Hello, world!"
+ jobs:
+  say_hello:
+     runs-on: ubuntu-latest
+     steps:
+     - name: say_hello
+       run: echo "Hello, world!"
