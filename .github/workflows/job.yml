@@ -1,0 +1,21 @@
+name: Multiple Jobs
+on:
+  push:
+    branches:
+      - main
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Step
+        run: echo "Ceci est le premier job."
+  second_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Second Step
+        run: echo "Ceci est le deuxieme job."
+  third_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Third Step
+        run: echo "Ceci est le troisieme job."
