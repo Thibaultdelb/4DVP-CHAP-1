@@ -1,0 +1,12 @@
+name: Mon Workflow
+
+on: [push]
+
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du code source
+        uses: actions/checkout@v2
+      - name: Affichage du fichier README.md
+        run: cat README.md
