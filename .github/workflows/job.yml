@@ -2,7 +2,7 @@ name: Multiple Jobs
 on:
   push:
     branches:
-      - main
+      - job
 jobs:
   first_job:
     runs-on: ubuntu-latest
