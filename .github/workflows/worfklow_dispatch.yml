@@ -1,28 +1,26 @@
-name: Player Infos Workflow
+name: "3.1] Workflow manuel"
 on:
   workflow_dispatch:
     inputs:
       username:
-        description: "Nom d'utilisateur"
+        description: "Username"
         required: true
-        default: "joueur1"
+        type: string
       level:
-        description: "Niveau"
+        description: "Level"
         required: true
-        default: "niveau1"
+        type: string
       class:
-        description: "Classe"
+        description: "Class"
         required: true
-        default: "jedi"
+        type: choice
         options:
           - "jedi"
           - "sith"
           - "rebel"
-
 jobs:
   player_infos:
     runs-on: ubuntu-latest
     steps:
-      - name: Afficher les informations du joueur
-        run: |
-          echo "Le joueur ${ {inputs.username} } est de niveau ${ {inputs.level} } et joue un ${ {inputs.Class} }."
+    - name: "Display Player Infos"
+      run: echo "Le Joueur ${{ inputs.username }} est de niveau ${{ inputs.level }} et joue un ${{ inputs.class }}."
