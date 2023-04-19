@@ -1,4 +1,4 @@
-name: "3.1] Workflow manuel"
+name: "worfklow_dispatch"
 on:
   workflow_dispatch:
     inputs:
